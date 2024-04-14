@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables let, const and Data Types</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>variable declaration using let</h1>
+    <hr>
+    <div>
+        let fname = "Rahul";<br>
+        let age = 22;
+    </div>
+
+    <h1>variable declaration using Const </h1>
+    <hr>
+    <p>const isAdult = true;</p>
+
+    <h1>while performing concatination operation on above variables we get: </h1>
+    <div>
+        <p id="concat"></p>
+        you can also: <br>
+        let result = <br>
+        "Name: " + fname <br>
+        + "&lt;br&gt; Age: " + age <br>
+        + "&lt;br&gt; Is Adult: " + isAdult; <br>
+        <p id="concat2"></p>
+    </div>
+    <h1>Arithmatic operation variables</h1>
+    <hr>
+    <div>
+        let x = 10; <br>
+        let y = 5; <br>
+        let sum = x + y; <br>
+    </div>
+    <div>
+        <h1>while performing arthematic operation on above variables we get:</h1>
+        <p id="arthematic"></p>
+        or we can use: <br>
+        document.getElementById("arthematic").innerhtml = "Sum: "+ (x + y); <br>
+        <p id="arthematic2"></p>
+    </div>
+
+    <div>
+        <h1>performing boolean comparisons using variable and directly</h1>
+        let isEqual = x === y; <br>
+        document.getElementById("booleanComparison").innerhtml = isEqual; <br>
+        <p id="booleanComparison"></p>
+        document.getElementById("booleanComparison").innerhtml = x === y;
+        <p id="booleanComparison2"></p>
+    </div>
+</body>
+
+</html>
