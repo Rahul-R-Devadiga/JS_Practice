@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Booleans</h1>
+    <hr>
+    <div>
+        <div>
+
+            <h2> Checking is given number is even or not using isEven function </h2>
+            function isEven(number) { <br>
+                return number % 2 === 0; <br>
+            } <br>
+            document.getElementById("Even").innerHTML += "Is 4 even?: " + isEven(4); <br>
+            document.getElementById("Even").innerHTML += "&lt;br&gt; Is 7 even?: " + isEven(7);
+            <p id="Even"></p>
+            
+            <hr>
+        </div>
+        
+        <div>
+
+            <h2> Checking is given number is even or not using isOdd function reversing the output of isEven function</h2>
+            function isOdd(number){ <br>
+                return !isEven(number); <br>
+            } <br>
+            
+            document.getElementById("Odd").innerHTML += "Is 4 odd?: " + isOdd(4); <br>
+            document.getElementById("Odd").innerHTML += "&lt;br&gt; Is 7 odd?: " + isOdd(7);
+            
+            <p id="Odd"></p>
+        </div>
+    </div>
+</body>
+
+</html>
