@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let num1 = parseFloat(document.getElementById("num1").value);
         let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1)) {
+            document.getElementById("result").innerHTML = "Enter First Number";
+        } else if (isNaN(num2)) {
+            document.getElementById("result").innerHTML = "Enter Second Number";
+        } else {
         switch (operations) {
             case "add":
                 document.getElementById("result").innerHTML = num1 + num2;
@@ -51,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             default:
                 document.getElementById("result").innerHTML = "Invalid Choice";
                 break;
+        }
         }
     }
 });
